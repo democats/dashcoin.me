@@ -1,0 +1,17 @@
+<html ng-app="thinWallet">
+<%= render 'head' %>
+
+<body ng-controller="AccountCtrl">
+
+<div ng-include src="getModalURL()"></div>
+
+<div class="main-app-container">
+
+  <%= render 'header' %>
+
+  <%= yield %>
+
+  <%= render 'footer' %>
+</div>
+</body>
+</html>

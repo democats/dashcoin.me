@@ -1,0 +1,31 @@
+
+<div class="review-account-details" modal-name="review-account-details">
+    <div class="w-container review-details-container">
+        <div class="w-clearfix review-details-div">
+            <a class="w-inline-block close-modal" data-ix="close-review-details" hide-modal>
+                <div class="close-overlay pointer" data-ix="close-overlay">+</div>
+            </a>
+            <h1 class="head-modal">Review Account Details</h1>
+            <div class="subhead-text modal review">These are your account details. Feel free to view them at any time.</div>
+            <div class="w-form form-wrapper">
+                <form id="email-form" name="email-form" data-name="Email Form">
+                    <label class="field-label review" for="Mnemonic-2">Account Address (Public)</label>
+                    <div class="move-text-div">
+                        <div class="review-text address">{{address}} <span class="fa fa-clipboard clipboard-btn" data-clipboard-action="copy" data-clipboard-text="{{address}}"></span></div>
+                    </div>
+                    <label class="field-label review" for="Mnemonic-2">View Key (Private)</label>
+                    <div class="move-text-div">
+                        <div class="review-text">{{view_key}} <span class="fa fa-clipboard clipboard-btn" data-clipboard-action="copy" data-clipboard-text="{{view_key}}"></span></div>
+                    </div>
+                    <label class="field-label review" for="Mnemonic-2">Spend Key (Private)</label>
+                    <div class="move-text-div">
+                        <div class="review-text">{{spend_key}} <span class="fa fa-clipboard clipboard-btn" data-clipboard-action="copy" data-clipboard-text="{{spend_key}}"></span></div>
+                    </div>
+                    <div class="submit-div">
+                        <a class="login-btn modals pointer" data-ix="close-review-details" hide-modal>Ok, thanks!</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
