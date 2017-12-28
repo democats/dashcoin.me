@@ -76,7 +76,8 @@
         </div>
       </div>
       <div class="w-col w-col-3">
-        <div class="transaction-detail transaction-page">{{tx.timestamp*1000 | time}}</div>
+        <div class="transaction-detail transaction-page" ng-if="tx.timestamp*10 === 21474836470">Awaiting confirmation</div>
+        <div class="transaction-detail transaction-page" ng-if="tx.timestamp*10 !== 21474836470">{{tx.timestamp*1000 | time}}</div>
       </div>
       <div class="w-col w-col-1">
         <div class="transaction-detail transaction-page">{{tx.mixin}}</div>
